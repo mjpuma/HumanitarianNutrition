@@ -1,0 +1,19 @@
+index,product,name
+0,DSM,Dried skimmed milk
+1,CSM,Corn-soy-milk
+2,WSM,Wheat-soy-milk
+3,ICSM,Instant corn-soy-milk
+4,CSB,Corn-soy blend
+5,WSB,Wheat-soy blend
+6,UNIMIX,UNIMIX
+7,SFSG,Soy-fortified sorghum grits
+8,HEB,High-energy biscuits
+9,BP5,BP-5
+10,F75,F-75
+11,F100,F-100
+12,RUTF,Ready-to-use therapeutic food
+13,RUSF,Ready-to-use supplementary food
+14,CSB+,Corn-soy blend plus
+15,CSB++,Super Cereal Plus
+16,LNS-SQ,Small-quantity LNS
+17,LNS-MQ,Medium-quantity LNS
