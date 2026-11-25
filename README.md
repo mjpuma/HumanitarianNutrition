@@ -47,7 +47,7 @@ FamineWatch documents famine events; HumanitarianNutrition documents the history
 
 ## Nutritional composition database
 
-[Composition explorer](docs/composition.html) — 12 formulation records, 284 nutrient records, 25 ingredient records and 12 preparation profiles. The explorer reads the CSVs directly.
+[Composition explorer](docs/composition.html) — 24 formulation records, 355 nutrient records, 56 ingredient records and 13 preparation profiles. The explorer reads the CSVs directly.
 
 | Dataset | Contents |
 |---|---|
@@ -57,3 +57,7 @@ FamineWatch documents famine events; HumanitarianNutrition documents the history
 | [Preparation](docs/data/preparation_requirements.csv) | Water, cooking and storage requirements |
 
 These are preliminary source transcriptions, not measured laboratory compositions. Missing values are not zero. Do not compare dry and prepared bases directly or treat products as clinically interchangeable. Historical CSM is a secondary-source formulation; the compressed emergency ration is a generic proxy for BP-5. Independent verification and source-specific reuse review remain pending.
+
+### Historical formulation reconstruction
+
+The composition explorer includes a historical recipe comparison. Added reference records for DSM, CSM, ICSM, CSB, WSB, WSM, SFSG and UNIMIX. Retrospective recipes and 1997 reference nutrient tables must not be treated as contemporaneous measurements for the 1950s or 1960s. UNIMIX's partial cereal-soy ratio is separately coded. Source transcriptions, document dates, and redistribution permissions remain subject to review.
