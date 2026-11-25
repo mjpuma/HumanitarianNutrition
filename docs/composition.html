@@ -1,0 +1,67 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HumanitarianNutrition — Composition Explorer</title><style>
+.viz-root{
+  color-scheme: light;
+  --surface-0:#f6f5f2; --surface-1:#fcfcfb; --surface-2:#f0efec;
+  --border:#dedcd5; --grid:#e8e6e0;
+  --text-primary:#0b0b0b; --text-secondary:#52514e; --text-muted:#76756f;
+  --series-1:#2a78d6; --series-2:#eb6834; --series-3:#1baf7a;
+  --seq-100:#cde2fb; --seq-250:#86b6ef; --seq-450:#2a78d6; --seq-600:#184f95;
+  --band:#fff3d6; --warn:#fab219; --accent-ink:#1c5cab;
+}
+@media (prefers-color-scheme: dark){
+  :root:where(:not([data-theme="light"])) .viz-root{
+    color-scheme: dark;
+    --surface-0:#121211; --surface-1:#1a1a19; --surface-2:#252523;
+    --border:#3a3a37; --grid:#2c2c2a;
+    --text-primary:#f0efec; --text-secondary:#c3c2b7; --text-muted:#9a998f;
+    --series-1:#3987e5; --series-2:#d95926; --series-3:#199e70;
+    --seq-100:#104281; --seq-250:#1c5cab; --seq-450:#3987e5; --seq-600:#86b6ef;
+    --band:#3a3320; --warn:#fab219; --accent-ink:#86b6ef;
+  }
+}
+:root[data-theme="dark"] .viz-root{
+    color-scheme: dark;
+    --surface-0:#121211; --surface-1:#1a1a19; --surface-2:#252523;
+    --border:#3a3a37; --grid:#2c2c2a;
+    --text-primary:#f0efec; --text-secondary:#c3c2b7; --text-muted:#9a998f;
+    --series-1:#3987e5; --series-2:#d95926; --series-3:#199e70;
+    --seq-100:#104281; --seq-250:#1c5cab; --seq-450:#3987e5; --seq-600:#86b6ef;
+    --band:#3a3320; --warn:#fab219; --accent-ink:#86b6ef;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif}
+.viz-root{background:var(--surface-0);color:var(--text-primary);min-height:100vh}
+header{padding:22px 28px 8px;max-width:1280px;margin:0 auto}
+h1{font-size:22px;margin:0 0 4px;font-weight:650;letter-spacing:-.01em}
+.sub{color:var(--text-secondary);margin:0;max-width:900px}
+.kpis{display:flex;gap:28px;flex-wrap:wrap;margin:16px 0 4px}
+.kpi .v{font-size:22px;font-weight:650;font-variant-numeric:tabular-nums}
+.kpi .l{color:var(--text-muted);font-size:12px}
+nav{max-width:1280px;margin:0 auto;padding:0 28px;display:flex;gap:4px;border-bottom:1px solid var(--border)}
+nav button{background:none;border:0;padding:10px 14px;font:inherit;color:var(--text-secondary);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px}
+nav button[aria-selected="true"]{color:var(--text-primary);border-bottom-color:var(--series-1);font-weight:600}
+main{max-width:1280px;margin:0 auto;padding:18px 28px 60px}
+.panel{display:none}.panel.on{display:block}
+.card{background:var(--surface-1);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:16px}
+.card h2{font-size:15px;margin:0 0 2px;font-weight:620}
+.card .note{color:var(--text-secondary);font-size:13px;margin:0 0 12px}
+.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+.controls label{font-size:12px;color:var(--text-secondary);display:flex;gap:6px;align-items:center}
+select,input[type=search],input[type=number]{font:inherit;font-size:13px;background:var(--surface-1);color:var(--text-primary);border:1px solid var(--border);border-radius:6px;padding:5px 8px}
+input[type=number]{width:84px}
+input[type=search]{min-width:220px}
+.chip{font:inherit;font-size:12px;border:1px solid var(--border);background:var(--surface-1);color:var(--text-secondary);border-radius:999px;padding:4px 10px;cursor:pointer}
+.chip[aria-pressed="true"]{border-color:var(--series-1);color:var(--text-primary);background:var(--surface-2)}
+.btn{font:inherit;font-size:12px;border:1px solid var(--border);background:var(--surface-2);color:var(--text-primary);border-radius:6px;padding:5px 10px;cursor:pointer;text-decoration:none}
+svg text{fill:var(--text-secondary);font-size:11px}
+.axis line,.axis path{stroke:var(--border)}
+.panel{display:block}table{border-collapse:collapse;width:100%;font-size:12px}td,th{padding:7px;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap}a{color:var(--accent-ink)}.scroll{overflow:auto}button{cursor:pointer}.typology td,.typology th{white-space:normal;vertical-align:top}.typology th:first-child{white-space:nowrap}.typology{min-width:760px}.typology td:nth-child(4){min-width:220px}.typology td:nth-child(5){min-width:145px}
+td,th{white-space:normal;vertical-align:top} .scroll{overflow:auto} .scroll table{min-width:640px} .tabs{display:flex;gap:12px;flex-wrap:wrap} select{max-width:100%}</style></head><body><div class="viz-root"><header><h1>HumanitarianNutrition — Composition Explorer</h1><p class="sub">Source-specific nutritional specifications, ingredient formulations and preparation requirements.</p><p><a href="index.html">← Procurement explorer</a></p><div class="kpis"><div class="kpi"><div class="v" id="nf">—</div><div class="l">Formulation records</div></div><div class="kpi"><div class="v" id="nn">—</div><div class="l">Nutrient records</div></div><div class="kpi"><div class="v" id="ni">—</div><div class="l">Ingredient records</div></div></div></header><main><section class="card"><h2>Explore composition</h2><p class="note">Values are specification limits or reported targets, not laboratory measurements. Blank means unreported. Prepared milk per 100 mL is not directly comparable with dry food per 100 g. Historical and branded proxy records are flagged.</p><div class="controls"><label>Product <select id="product"><option value="">All</option></select></label><label>Formulation <select id="form"><option value="">All</option></select></label><input id="search" type="search" placeholder="Search nutrients or ingredients"></div><div class="tabs" id="tabs"></div><p id="status" role="status">Loading datasets…</p><div class="scroll"><table><thead id="thead"></thead><tbody id="tbody"></tbody></table></div><p><a id="download" class="btn" href="data/nutrient_composition.csv" download>Download full CSV</a> <button class="btn" id="filtered">Download filtered CSV</button></p></section><section class="card"><h2>Interpretation</h2><p>Do not infer clinical interchangeability from nutrient values. Ingredient shares represent reference recipes only. A missing ingredient proportion is not zero. Document dates refer to specification editions, not product introduction. Independent transcription review is pending.</p><p>Source links are available in the formulations table. The older historical products remain collection targets.</p></section></main></div><script>
+const $=id=>document.getElementById(id), names={nutrient_composition:'Nutrients',ingredient_composition:'Ingredients',preparation_requirements:'Preparation',formulations:'Formulations & sources'};let D={},active='nutrient_composition',shown=[];
+function parse(s){let rows=[],r=[],v='',q=false;for(let i=0;i<s.length;i++){let c=s[i];if(c==='"'){if(q&&s[i+1]==='"'){v+='"';i++}else q=!q}else if(!q&&(c===','||c==='\n')){r.push(v);v='';if(c==='\n'){rows.push(r);r=[]}}else if(c!=='\r')v+=c}if(v||r.length){r.push(v);rows.push(r)}let h=rows.shift();return {h,rows:rows.filter(r=>r.length===h.length).map(r=>Object.fromEntries(h.map((k,i)=>[k,r[i]])))}}
+function cell(tag,v){const e=document.createElement(tag);e.textContent=v??'';return e}
+function render(){const t=D[active];if(!t)return;const product=$('product').value,form=$('form').value,q=$('search').value.toLowerCase(),allowed=new Set(D.formulations.rows.filter(r=>(!product||r.product===product)&&(!form||r.formulation_id===form)).map(r=>r.formulation_id));shown=t.rows.filter(r=>allowed.has(r.formulation_id)&&Object.values(r).join(' ').toLowerCase().includes(q));$('thead').replaceChildren();$('tbody').replaceChildren();let tr=document.createElement('tr');t.h.forEach(k=>tr.append(cell('th',k.replaceAll('_',' '))));$('thead').append(tr);for(const r of shown){let tr=document.createElement('tr');for(const k of t.h){let td=cell('td',r[k]);if(k==='source_url'&&/^https:\/\//.test(r[k])){let a=document.createElement('a');a.href=r[k];a.textContent='Source document';td.replaceChildren(a)}tr.append(td)}$('tbody').append(tr)}$('status').textContent=shown.length+' records';$('download').href='data/'+active+'.csv';for(const b of $('tabs').children)b.setAttribute('aria-pressed',String(b.dataset.key===active))}
+function forms(){let p=$('product').value;$('form').replaceChildren(new Option('All',''));for(const f of D.formulations.rows.filter(r=>!p||r.product===p))$('form').add(new Option(f.formulation_id,f.formulation_id));render()}
+async function init(){try{await Promise.all(Object.keys(names).map(async k=>{let r=await fetch('data/'+k+'.csv');if(!r.ok)throw Error(k);D[k]=parse(await r.text())}));$('nf').textContent=D.formulations.rows.length;$('nn').textContent=D.nutrient_composition.rows.length;$('ni').textContent=D.ingredient_composition.rows.length;for(const p of [...new Set(D.formulations.rows.map(r=>r.product))].sort())$('product').add(new Option(p,p));for(const [k,v] of Object.entries(names)){let b=document.createElement('button');b.className='chip';b.dataset.key=k;b.textContent=v;b.onclick=()=>{active=k;render()};$('tabs').append(b)}$('product').onchange=forms;$('form').onchange=render;$('search').oninput=render;$('filtered').onclick=()=>{let h=D[active].h,s=[h,...shown.map(r=>h.map(k=>r[k]))].map(r=>r.map(v=>'"'+String(v??'').replaceAll('"','""')+'"').join(',')).join('\n');let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([s],{type:'text/csv'}));a.download=active+'_filtered.csv';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)};forms()}catch(e){$('status').textContent='Unable to load data: '+e.message}}init();
+</script></body></html>
