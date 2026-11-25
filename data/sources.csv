@@ -1,0 +1,17 @@
+index,source_id,url,description
+0,U25,https://www.unicef.org/supply/media/24306/file/Ready-to-use-therapeutic-food-price-2003-2024.pdf,September 2025 edition; page 1 both tables
+1,U26,https://www.unicef.org/supply/media/25986/file/Ready-to-use-therapeutic-food-price-data-2003-2026.pdf,August 14 2026 edition; pages 1 and 3
+2,A2019,https://www.ams.usda.gov/sites/default/files/media/InternationalProcurementFY2019Quarter4.pdf,"International procurement; Q4 report, cumulative status not independently confirmed"
+3,A2020,https://www.ams.usda.gov/sites/default/files/media/FY2020Quarter4.pdf,"International procurement; Q4 report, cumulative status not independently confirmed"
+4,A2021,https://www.ams.usda.gov/sites/default/files/media/ICPFY2021Quarter4.pdf,"International procurement; Q4 report, cumulative status not independently confirmed"
+5,A2022,https://www.ams.usda.gov/sites/default/files/media/ICPFY2022Quarter4.pdf,"International procurement; Q4 report, cumulative status not independently confirmed"
+6,A2023,https://www.ams.usda.gov/sites/default/files/media/ICPFY2023Quarter4.pdf,"International procurement; Q4 report, cumulative status not independently confirmed"
+7,A2024,https://www.ams.usda.gov/sites/default/files/media/ICP_FY2024_Quarter4.pdf,"International procurement; Q4 report, cumulative status not independently confirmed"
+8,A2025,https://www.ams.usda.gov/sites/default/files/media/InternationalCommodityPurchasesFY25.pdf,International procurement; annual total
+9,A2026,https://www.ams.usda.gov/sites/default/files/media/InternationalCommodityPurchases2026.pdf,International procurement; annual total
+10,HIST,https://jn.nutrition.org/article/S0022-3166%2822%2915281-8/fulltext,Historical review: introduction of CSM and WSM in 1966
+11,HIST2,https://www.soyinfocenter.com/books/268,Secondary historical compilation; 1966 CSM shipment 28000 MT; verify original before quantitative use
+12,ARCH,https://publishers.issn.org/resource/ISSN/0196-3201,PL480 annual report catalog; archival lead
+13,WFP,https://www.wfp.org/publications/2023-wfp-nutrition-numbers,"WFP 2023 distribution, not procurement"
+14,SPEC,https://www.ams.usda.gov/selling-food/international-procurement/commodity-requirements,Product specifications; not yet extracted
+15,USAID,https://pdf.usaid.gov/pdf_docs/PNAAL120.pdf,Historical product evaluation; candidate source
