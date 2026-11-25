@@ -61,3 +61,7 @@ These are preliminary source transcriptions, not measured laboratory composition
 ### Historical formulation reconstruction
 
 The composition explorer includes a historical recipe comparison. Added reference records for DSM, CSM, ICSM, CSB, WSB, WSM, SFSG and UNIMIX. Retrospective recipes and 1997 reference nutrient tables must not be treated as contemporaneous measurements for the 1950s or 1960s. UNIMIX's partial cereal-soy ratio is separately coded. Source transcriptions, document dates, and redistribution permissions remain subject to review.
+
+## Historical shipments and valuations
+
+[Archival explorer](docs/history.html) · [CSV](docs/data/historical_shipments.csv). Initial 74 rows (including missing cells) cover PL-480 shipment quantities for 1955–1983, selected US food-aid milk shipments for 1992–2002, and FY1977 Q1 commodity-specific CCC investment values. These are not a continuous procurement expenditure series. Parsed historical PDF tables require scan verification; suspect values are flagged and must not be used for inference before review. 1954 and 1984–1991 remain gaps. Program scopes differ; do not splice without reconciliation.
