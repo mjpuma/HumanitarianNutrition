@@ -1,0 +1,4 @@
+index,year,event,source_id,evidence_status
+0,1954,PL480 study anchor,ARCH,contextual anchor
+1,1966,Introduction of CSM and WSM into US food aid,HIST,published historical review
+2,1966,CSM shipments reported as 28000 metric tons,HIST2,secondary claim pending original table verification
