@@ -44,3 +44,16 @@ Unpublished research seed. Transcriptions require independent source verificatio
 ## Related research
 
 FamineWatch documents famine events; HumanitarianNutrition documents the history and economics of nutrition interventions; TherapeuticProvisioning explores resource allocation under constraints.
+
+## Nutritional composition database
+
+[Composition explorer](docs/composition.html) — 12 formulation records, 284 nutrient records, 25 ingredient records and 12 preparation profiles. The explorer reads the CSVs directly.
+
+| Dataset | Contents |
+|---|---|
+| [Formulations](docs/data/formulations.csv) | Product, specification version, source and limitations |
+| [Nutrients](docs/data/nutrient_composition.csv) | Minimum, maximum and target values on explicit measurement bases |
+| [Ingredients](docs/data/ingredient_composition.csv) | Reference recipe mass fractions |
+| [Preparation](docs/data/preparation_requirements.csv) | Water, cooking and storage requirements |
+
+These are preliminary source transcriptions, not measured laboratory compositions. Missing values are not zero. Do not compare dry and prepared bases directly or treat products as clinically interchangeable. Historical CSM is a secondary-source formulation; the compressed emergency ration is a generic proxy for BP-5. Independent verification and source-specific reuse review remain pending.
